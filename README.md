@@ -13,4 +13,5 @@ By leveraging the *advantage function* and asynchronous updates, A3C aims to:
 ---
  
 # Problem RecSys - The Warm-Start Problem
+<img src="Images/Recys Problem.png" alt="My Diagram" width="500"/>
 Warm-start occurs when user or item interaction data is already available, but the system still struggles to generate accurate and personalized recommendations. Although methods like collaborative filtering are used, the system tends to be static and fails to adapt to dynamic changes in user preferences.
