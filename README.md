@@ -1,4 +1,5 @@
 # Overview
+<p align="justify">
 This is a personalized recommender system that I developed as my final project at Institut Teknologi Sepuluh Nopember (ITS).
 My journey with recommender systems began during a research internship at National Taiwan University of Science and Technology (NTUST), where I was first introduced to how recommendation engines work. From there, I discovered a strong interest in data science, especially in building systems that can adapt to user preferences.
 
@@ -7,12 +8,14 @@ I have always admired how platforms like Amazon and Netflix recommend products o
 Traditional approaches like collaborative filtering or matrix factorization are effective on historical data but often static and biased, failing to capture evolving user interests. This motivated me to explore Reinforcement Learning (RL), a branch of machine learning that can update recommendations dynamically through user interactions.
 
 For this project, I implemented the A3C (Asynchronous Advantage Actor-Critic) algorithm to address warm-start issues in recommender systems. By leveraging the advantage function and asynchronous updates, A3C aims to:
+</p>
 
 ⚡ Reduce gradient variance
 📈 Accelerate learning in large action spaces
 🎯 Improve recommendation accuracy and diversity
 
-In short, this project represents my first step in applying reinforcement learning to build a personalized recommender system that is not only accurate but also adaptive.  
+In short, this project represents my first step in applying reinforcement learning to build a personalized recommender system that is not only accurate but also adaptive.
+  
 ---
  
 # Problem RecSys
