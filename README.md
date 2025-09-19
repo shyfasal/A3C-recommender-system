@@ -35,7 +35,7 @@ Most recommender systems rely on collaborative filtering methods such as Matrix 
 
 **Problem 3 – Instability of Reinforcement Learning Approaches**
 
-Reinforcement Learning (RL) has been introduced to overcome the limitations of static models by continuously updating recommendations based on user interactions. However, conventional RL algorithms still face significant challenges: the high variance of gradients—especially in large action spaces—leads to unstable learning and suboptimal recommendations.
+Reinforcement Learning (RL) has been introduced to overcome the limitations of static models by continuously updating recommendations based on user interactions. However, conventional RL algorithms still face significant challenges: the high variance of gradients especially in large action spaces leads to unstable learning and suboptimal recommendations.
 
 **Proposed Solution – A3C (Asynchronous Advantage Actor-Critic)**
 
