@@ -1,11 +1,6 @@
 # Overview
 <p align="justify">
-This is a personalized recommender system that I developed as my final project at Institut Teknologi Sepuluh Nopember (ITS).
-My journey with recommender systems began during a research internship at National Taiwan University of Science and Technology (NTUST), where I was first introduced to how recommendation engines work. From there, I discovered a strong interest in data science, especially in building systems that can adapt to user preferences.
-
-I have always admired how platforms like Amazon and Netflix recommend products or content that feel surprisingly relevant. They save users from the tedious process of filtering countless options, and most of the time the recommendations are spot on. Inspired by this, I started asking myself: How can I design a recommender that goes beyond static methods and adapts more effectively to user preferences?
-
-Traditional approaches like collaborative filtering or matrix factorization are effective on historical data but often static and biased, failing to capture evolving user interests. This motivated me to explore Reinforcement Learning (RL), a branch of machine learning that can update recommendations dynamically through user interactions.
+This is a personalized recommender system that I developed as my final project at Institut Teknologi Sepuluh Nopember (ITS). My journey with recommender systems began during a research internship at National Taiwan University of Science and Technology (NTUST), where I was first introduced to how recommendation engines work. From there, I discovered a strong interest in data science, especially in building systems that can adapt to user preferences. I have always admired how platforms like Amazon and Netflix recommend products or content that feel surprisingly relevant. They save users from the tedious process of filtering countless options, and most of the time the recommendations are spot on. Inspired by this, I asked myself: How can I design a recommender that goes beyond static methods and adapts more effectively to user preferences? To answer this, I explored Reinforcement Learning (RL), a branch of machine learning that allows systems to update recommendations based on user interactions.
 
 </p>
 
