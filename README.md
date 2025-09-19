@@ -9,13 +9,18 @@ Traditional approaches like collaborative filtering or matrix factorization are 
 
 </p>
 
+<p align="justify">
 For this project, I implemented the A3C (Asynchronous Advantage Actor-Critic) algorithm to address warm-start issues in recommender systems. By leveraging the advantage function and asynchronous updates, A3C aims to:
+</p>
 
-⚡ Reduce gradient variance
-📈 Accelerate learning in large action spaces
-🎯 Improve recommendation accuracy and diversity
+⚡ Reduce gradient variance  
+📈 Accelerate learning in large action spaces  
+🎯 Improve recommendation accuracy and diversity  
 
+<p align="justify">
 In short, this project represents my first step in applying reinforcement learning to build a personalized recommender system that is not only accurate but also adaptive.
+</p>
+
   
 ---
  
