@@ -66,7 +66,8 @@ Normalizes and filters users based on minimum interaction thresholds (e.g., remo
 Splits the dataset into training and test sets, preserving the temporal order of interactions to simulate realistic recommendation scenarios.
 
 **Challenges**
-One limitation of MovieLens 100K is its sparsity: with only 100k ratings across nearly 1,700 movies, the user–item matrix is about 93% empty. This makes it difficult for collaborative filtering approaches to perform well, especially for users with very few interactions (the warm start problem). Another challenge is the lack of real-time interaction data — the ratings are static, so simulating an environment for reinforcement learning requires additional design choices.
+
+One limitation of MovieLens 100K is its sparsity with only 100k ratings across nearly 1,700 movies, the user–item matrix is about 93% empty. This makes it difficult for collaborative filtering approaches to perform well, especially for users with very few interactions (the warm start problem). Another challenge is the lack of real-time interaction data — the ratings are static, so simulating an environment for reinforcement learning requires additional design choices.
 
 **Why MovieLens 100K?**
 
