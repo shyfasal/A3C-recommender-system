@@ -40,3 +40,8 @@ Reinforcement Learning (RL) has been introduced to overcome the limitations of s
 **Proposed Solution – A3C (Asynchronous Advantage Actor-Critic)**
 
 To address these challenges, this research proposes the use of the A3C algorithm, which reduces gradient variance through the advantage function and leverages asynchronous parallel updates. This enables the recommender system to adapt more quickly to changing user preferences, stabilize learning, and deliver more accurate and diverse recommendations.
+
+---
+# How Recommender A3C works
+
+
