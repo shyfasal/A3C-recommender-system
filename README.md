@@ -6,9 +6,8 @@ My journey with recommender systems began during a research internship at Nation
 I have always admired how platforms like Amazon and Netflix recommend products or content that feel surprisingly relevant. They save users from the tedious process of filtering countless options, and most of the time the recommendations are spot on. Inspired by this, I started asking myself: How can I design a recommender that goes beyond static methods and adapts more effectively to user preferences?
 
 Traditional approaches like collaborative filtering or matrix factorization are effective on historical data but often static and biased, failing to capture evolving user interests. This motivated me to explore Reinforcement Learning (RL), a branch of machine learning that can update recommendations dynamically through user interactions.
-
-For this project, I implemented the A3C (Asynchronous Advantage Actor-Critic) algorithm to address warm-start issues in recommender systems. By leveraging the advantage function and asynchronous updates, A3C aims to:
 </p>
+For this project, I implemented the A3C (Asynchronous Advantage Actor-Critic) algorithm to address warm-start issues in recommender systems. By leveraging the advantage function and asynchronous updates, A3C aims to:
 
 ⚡ Reduce gradient variance
 📈 Accelerate learning in large action spaces
