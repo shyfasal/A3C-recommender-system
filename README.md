@@ -1,15 +1,18 @@
 # Overview
-Recommender Systems (RecSys) play an important role in helping users discover relevant products, services, or information among countless options.  
-Two main approaches are commonly used: **content-based filtering** and **collaborative filtering**.  
+This is a personalized recommender system that I developed as my final project at Institut Teknologi Sepuluh Nopember (ITS).
+My journey with recommender systems began during a research internship at National Taiwan University of Science and Technology (NTUST), where I was first introduced to how recommendation engines work. From there, I discovered a strong interest in data science, especially in building systems that can adapt to user preferences.
 
-However, challenges remain in the **warm-start** scenario, where user interaction data exists but the system still struggles to deliver truly personalized recommendations.  
+I have always admired how platforms like Amazon and Netflix recommend products or content that feel surprisingly relevant. They save users from the tedious process of filtering countless options, and most of the time the recommendations are spot on. Inspired by this, I started asking myself: How can I design a recommender that goes beyond static methods and adapts more effectively to user preferences?
 
-This project explores the use of **A3C (Asynchronous Advantage Actor-Critic)** to address warm-start issues.  
-By leveraging the *advantage function* and asynchronous updates, A3C aims to:  
+Traditional approaches like collaborative filtering or matrix factorization are effective on historical data but often static and biased, failing to capture evolving user interests. This motivated me to explore Reinforcement Learning (RL), a branch of machine learning that can update recommendations dynamically through user interactions.
 
-- ⚡ Reduce gradient variance  
-- 📈 Accelerate learning in large action spaces  
-- 🎯 Improve recommendation accuracy and diversity  
+For this project, I implemented the A3C (Asynchronous Advantage Actor-Critic) algorithm to address warm-start issues in recommender systems. By leveraging the advantage function and asynchronous updates, A3C aims to:
+
+⚡ Reduce gradient variance
+📈 Accelerate learning in large action spaces
+🎯 Improve recommendation accuracy and diversity
+
+In short, this project represents my first step in applying reinforcement learning to build a personalized recommender system that is not only accurate but also adaptive.  
 ---
  
 # Problem RecSys
