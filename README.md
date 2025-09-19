@@ -43,5 +43,6 @@ To address these challenges, this research proposes the use of the A3C algorithm
 
 ---
 # How Recommender A3C works
+<img src="Images/A3C CELL.png" alt="My Diagram" width="700"/>
 
 
