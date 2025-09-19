@@ -53,11 +53,11 @@ At the beginning of this project, I assumed that finding a well-structured datas
 
 **MovieLens 100K**
 
-Format – The dataset is organized into several files. The main file u.data stores user–item interactions in the form of (user_id, movie_id, rating, timestamp). Additional metadata files include u.item, which contains movie titles and genres, and u.user, which stores demographic information about users such as age, gender, occupation, and zip code.
+Format – The dataset is organized into several files. The main file `u.data` stores user–item interactions in the form of `(user_id, movie_id, rating, timestamp)`. Additional metadata files include `u.item`, which contains movie titles and genres, and `u.user`, which stores demographic information about users such as age, gender, occupation, and zip code.
 
 **Processing**  To make the dataset usable, I wrote a preprocessing pipeline that:
 
-Loads the raw .dat file into pandas DataFrames.
+Loads the `raw.dat` file into pandas DataFrames.
 
 Maps movie_id to human-readable titles and genres.
 
