@@ -51,9 +51,9 @@ To address these challenges, this research proposes the use of the A3C algorithm
 At the beginning of this project, I assumed that finding a well-structured dataset for building a recommender system would be straightforward. Fortunately, I came across the MovieLens 100K dataset
 , one of the most widely used benchmark datasets in recommendation research. This dataset contains 100,000 ratings from 943 users on 1,682 movies, making it an excellent starting point for experimenting with different algorithms.
 
-**MovieLens 100K**
+### MovieLens 100K
 
-### 📊 Raw Data Preview (MovieLens 100K)
+**📊 Raw Data Preview (MovieLens 100K)**
 
 |No| user_id | movie_id | rating | timestamp  |
 |-----|-----|-----|-----|-------|
@@ -66,19 +66,22 @@ At the beginning of this project, I assumed that finding a well-structured datas
 
 
 
-Format – The dataset is organized into several files. The main file `u.data` stores user–item interactions in the form of `(user_id, movie_id, rating, timestamp)`. Additional metadata files include `u.item`, which contains movie titles and genres, and `u.user`, which stores demographic information about users such as age, gender, occupation, and zip code.
+Format  The dataset is organized into several files. The main file `u.data` stores user–item interactions in the form of `(user_id, movie_id, rating, timestamp)`. Additional metadata files include `u.item`, which contains movie titles and genres, and `u.user`, which stores demographic information about users such as age, gender, occupation, and zip code.
 
-**Processing**  To make the dataset usable, I wrote a preprocessing pipeline that:
+**Processing**  
+
+To make the dataset usable, I wrote a preprocessing pipeline that:
 
 Loads the `raw.dat` file into pandas DataFrames.
 
-Maps movie_id to human-readable titles and genres.
+Maps `movie_id` to human-readable titles and genres.
 
 Normalizes and filters users based on minimum interaction thresholds (e.g., removing users with fewer than 5 ratings).
 
 Splits the dataset into training and test sets, preserving the temporal order of interactions to simulate realistic recommendation scenarios.
 
 **Challenges**
+
 
 One limitation of MovieLens 100K is its sparsity with only 100k ratings across nearly 1,700 movies, the user–item matrix is about 93% empty. This makes it difficult for collaborative filtering approaches to perform well, especially for users with very few interactions (the warm start problem). Another challenge is the lack of real-time interaction data — the ratings are static, so simulating an environment for reinforcement learning requires additional design choices.
 
