@@ -119,68 +119,130 @@ Despite its limitations, the MovieLens 100K dataset provides a clean and reliabl
 
 <h2>📊 Evaluation Results</h2>
 
+<h3>Hit@10</h3>
 <table>
   <thead>
     <tr>
       <th>Metode</th>
-      <th>p = 10%<br>(Hit@10 / N@10)</th>
-      <th>p = 30%<br>(Hit@10 / N@10)</th>
-      <th>p = 50%<br>(Hit@10 / N@10)</th>
-      <th>p = 70%<br>(Hit@10 / N@10)</th>
-      <th>p = 90%<br>(Hit@10 / N@10)</th>
+      <th>p = 10%</th>
+      <th>p = 30%</th>
+      <th>p = 50%</th>
+      <th>p = 70%</th>
+      <th>p = 90%</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td align="center">Pop-Ranking</td>
-      <td align="center">10.96% / 2.90%</td>
-      <td align="center">9.49% / 2.16%</td>
-      <td align="center">8.15% / 1.65%</td>
-      <td align="center">7.41% / 1.31%</td>
-      <td align="center">7.52% / 1.48%</td>
+      <td align="center">10.96%</td>
+      <td align="center">9.49%</td>
+      <td align="center">8.15%</td>
+      <td align="center">7.41%</td>
+      <td align="center">7.52%</td>
     </tr>
     <tr>
       <td align="center">Deep Q-Network</td>
-      <td align="center">35.07% / 7.72%</td>
-      <td align="center">- / -</td>
-      <td align="center">26.59% / 5.90%</td>
-      <td align="center">- / -</td>
-      <td align="center">14.47% / 4.61%</td>
+      <td align="center">35.07%</td>
+      <td align="center">-</td>
+      <td align="center">26.59%</td>
+      <td align="center">-</td>
+      <td align="center">14.47%</td>
     </tr>
     <tr>
       <td align="center">Session-based RNN</td>
-      <td align="center">39.06% / 8.54%</td>
-      <td align="center">36.67% / 6.92%</td>
-      <td align="center">32.93% / 5.45%</td>
-      <td align="center">27.08% / 4.05%</td>
-      <td align="center">19.11% / 3.66%</td>
+      <td align="center">39.06%</td>
+      <td align="center">36.67%</td>
+      <td align="center">32.93%</td>
+      <td align="center">27.08%</td>
+      <td align="center">19.11%</td>
     </tr>
     <tr>
       <td align="center">SLRL (Warm-case)</td>
-      <td align="center">53.62% / 14.34%</td>
-      <td align="center">50.11% / 12.07%</td>
-      <td align="center">46.99% / 9.64%</td>
-      <td align="center">43.12% / 7.90%</td>
-      <td align="center">30.70% / 6.18%</td>
+      <td align="center">53.62%</td>
+      <td align="center">50.11%</td>
+      <td align="center">46.99%</td>
+      <td align="center">43.12%</td>
+      <td align="center">30.70%</td>
     </tr>
     <tr>
       <td align="center">A3C 80% Train 20% Test</td>
-      <td align="center">55.18% / 14.52%</td>
-      <td align="center">53.21% / 12.92%</td>
-      <td align="center">47.74% / 10.04%</td>
-      <td align="center">43.35% / 7.99%</td>
-      <td align="center">28.80% / 5.67%</td>
+      <td align="center">55.18%</td>
+      <td align="center">53.21%</td>
+      <td align="center">47.74%</td>
+      <td align="center">43.35%</td>
+      <td align="center">28.80%</td>
     </tr>
     <tr>
       <td align="center">A3C 90% Train 10% Test</td>
-      <td align="center">56.43% / 14.36%</td>
-      <td align="center">52.40% / 12.53%</td>
-      <td align="center">48.30% / 9.96%</td>
-      <td align="center">44.84% / 8.28%</td>
-      <td align="center">32.12% / 6.51%</td>
+      <td align="center">56.43%</td>
+      <td align="center">52.40%</td>
+      <td align="center">48.30%</td>
+      <td align="center">44.84%</td>
+      <td align="center">32.12%</td>
     </tr>
   </tbody>
 </table>
 
-
-
+<h3>NDCG@10</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Metode</th>
+      <th>p = 10%</th>
+      <th>p = 30%</th>
+      <th>p = 50%</th>
+      <th>p = 70%</th>
+      <th>p = 90%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">Pop-Ranking</td>
+      <td align="center">2.90%</td>
+      <td align="center">2.16%</td>
+      <td align="center">1.65%</td>
+      <td align="center">1.31%</td>
+      <td align="center">1.48%</td>
+    </tr>
+    <tr>
+      <td align="center">Deep Q-Network</td>
+      <td align="center">7.72%</td>
+      <td align="center">-</td>
+      <td align="center">5.90%</td>
+      <td align="center">-</td>
+      <td align="center">4.61%</td>
+    </tr>
+    <tr>
+      <td align="center">Session-based RNN</td>
+      <td align="center">8.54%</td>
+      <td align="center">6.92%</td>
+      <td align="center">5.45%</td>
+      <td align="center">4.05%</td>
+      <td align="center">3.66%</td>
+    </tr>
+    <tr>
+      <td align="center">SLRL (Warm-case)</td>
+      <td align="center">14.34%</td>
+      <td align="center">12.07%</td>
+      <td align="center">9.64%</td>
+      <td align="center">7.90%</td>
+      <td align="center">6.18%</td>
+    </tr>
+    <tr>
+      <td align="center">A3C 80% Train 20% Test</td>
+      <td align="center">14.52%</td>
+      <td align="center">12.92%</td>
+      <td align="center">10.04%</td>
+      <td align="center">7.99%</td>
+      <td align="center">5.67%</td>
+    </tr>
+    <tr>
+      <td align="center">A3C 90% Train 10% Test</td>
+      <td align="center">14.36%</td>
+      <td align="center">12.53%</td>
+      <td align="center">9.96%</td>
+      <td align="center">8.28%</td>
+      <td align="center">6.51%</td>
+    </tr>
+  </tbody>
+</table>
