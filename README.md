@@ -78,13 +78,13 @@ To make the dataset usable, I wrote a preprocessing pipeline that:
 3.Normalizes and filters users based on minimum interaction thresholds (e.g., removing users with fewer than 5 ratings).
 4.Splits the dataset into training and test sets, preserving the temporal order of interactions to simulate realistic recommendation scenarios.
 
-** 🔹 Dataset Statistics (Split Comparison)**
+**🔹Dataset Statistics (Split Comparison)**
 
 <table>
 <tr>
 <td>
 
-**📌 80% Training – 20% Testing**
+**80% Training – 20% Testing**
 |               | Users | Items | Ratings  |
 |---------------|-------|-------|----------|
 | Training Set  | 754   | 1346  | 80,000   |
@@ -94,7 +94,7 @@ To make the dataset usable, I wrote a preprocessing pipeline that:
 </td>
 <td>
 
-**📌 90% Training – 10% Testing**
+**90% Training – 10% Testing**
 |               | Users | Items | Ratings  |
 |---------------|-------|-------|----------|
 | Training Set  | 832   | 1500  | 90,000   |
