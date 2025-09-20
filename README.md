@@ -55,14 +55,15 @@ At the beginning of this project, I assumed that finding a well-structured datas
 
 ### 📊 Raw Data Preview (MovieLens 100K)
 
-| user_id | movie_id | rating | timestamp  |
-|-----|-----|-----|-------|
-| 1       | 50       | 5      | 881250949  |
-| 1       | 172      | 5      | 881250949  |
-| 1       | 133      | 1      | 881250949  |
-| 2       | 302      | 3      | 891717742  |
-| 2       | 377      | 4      | 891717742  |
-| 3       | 50       | 2      | 878887116  |
+|No| user_id | movie_id | rating | timestamp  |
+|-----|-----|-----|-----|-------|
+1| 1       | 50       | 5      | 881250949  |
+2| 1       | 172      | 5      | 881250949  |
+| :       | :      | :      | :  |
+99998| 276       | 1090      | 1      | 874795795  |
+99999| 13       | 225      | 2      | 882399156  |
+10000| 12       | 203       | 3      | 879959583  |
+
 
 
 Format – The dataset is organized into several files. The main file `u.data` stores user–item interactions in the form of `(user_id, movie_id, rating, timestamp)`. Additional metadata files include `u.item`, which contains movie titles and genres, and `u.user`, which stores demographic information about users such as age, gender, occupation, and zip code.
