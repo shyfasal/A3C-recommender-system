@@ -52,6 +52,19 @@ At the beginning of this project, I assumed that finding a well-structured datas
 , one of the most widely used benchmark datasets in recommendation research. This dataset contains 100,000 ratings from 943 users on 1,682 movies, making it an excellent starting point for experimenting with different algorithms.
 
 **MovieLens 100K**
+### 📊 Raw Data (MovieLens 100K)
+
+The raw dataset contains user interactions in the following format:
+
+```csv
+user_id, movie_id, rating, timestamp
+1, 50, 5, 881250949
+1, 172, 5, 881250949
+1, 133, 1, 881250949
+2, 302, 3, 891717742
+2, 377, 4, 891717742
+3, 50, 2, 878887116
+
 
 Format – The dataset is organized into several files. The main file `u.data` stores user–item interactions in the form of `(user_id, movie_id, rating, timestamp)`. Additional metadata files include `u.item`, which contains movie titles and genres, and `u.user`, which stores demographic information about users such as age, gender, occupation, and zip code.
 
