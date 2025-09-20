@@ -59,7 +59,7 @@ At the beginning of this project, I assumed that finding a well-structured datas
 |-----|-----|-----|-----|-------|
 1| 1       | 50       | 5      | 881250949  |
 2| 1       | 172      | 5      | 881250949  |
-| :       | :      | :      | :  |
+| :       | :      | :      | :  | : |
 99998| 276       | 1090      | 1      | 874795795  |
 99999| 13       | 225      | 2      | 882399156  |
 10000| 12       | 203       | 3      | 879959583  |
@@ -109,7 +109,7 @@ To make the dataset usable, I wrote a preprocessing pipeline that:
 **Challenges**
 
 
-One limitation of MovieLens 100K is its sparsity with only 100k ratings across nearly 1,700 movies, the user–item matrix is about 93% empty. This makes it difficult for collaborative filtering approaches to perform well, especially for users with very few interactions (the warm start problem). Another challenge is the lack of real-time interaction data — the ratings are static, so simulating an environment for reinforcement learning requires additional design choices.
+One limitation of MovieLens 100K is its sparsity with only 100k ratings across nearly 1,700 movies, the user–item matrix is about 93% empty. This makes it difficult for collaborative filtering approaches to perform well, especially for users with very few interactions (the warm start problem). Another challenge is the lack of real-time interaction data. The ratings are static, so simulating an environment for reinforcement learning requires additional design choices.
 
 **Why MovieLens 100K?**
 
