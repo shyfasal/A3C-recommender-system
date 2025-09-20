@@ -68,6 +68,35 @@ At the beginning of this project, I assumed that finding a well-structured datas
 
 Format  The dataset is organized into several files. The main file `u.data` stores user–item interactions in the form of `(user_id, movie_id, rating, timestamp)`. Additional metadata files include `u.item`, which contains movie titles and genres, and `u.user`, which stores demographic information about users such as age, gender, occupation, and zip code.
 
+### 🔹 Dataset Statistics (Split Comparison)
+
+<table>
+<tr>
+<td>
+
+#### 📌 80% Training – 20% Testing
+|               | Users | Items | Ratings  |
+|---------------|-------|-------|----------|
+| Training Set  | 754   | 1346  | 80,000   |
+| Testing Set   | 189   | 336   | 20,000   |
+| **Total**     | 943   | 1682  | 100,000  |
+
+</td>
+<td>
+
+#### 📌 90% Training – 10% Testing
+|               | Users | Items | Ratings  |
+|---------------|-------|-------|----------|
+| Training Set  | 832   | 1500  | 90,000   |
+| Testing Set   | 111   | 170   | 10,000   |
+| **Total**     | 943   | 1682  | 100,000  |
+
+</td>
+</tr>
+</table>
+
+
+
 **Processing**  
 
 To make the dataset usable, I wrote a preprocessing pipeline that:
