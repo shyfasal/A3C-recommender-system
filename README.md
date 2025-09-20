@@ -69,7 +69,7 @@ At the beginning of this project, I assumed that finding a well-structured datas
 Format  The dataset is organized into several files. The main file `u.data` stores user–item interactions in the form of `(user_id, movie_id, rating, timestamp)`. Additional metadata files include `u.item`, which contains movie titles and genres, and `u.user`, which stores demographic information about users such as age, gender, occupation, and zip code.
 
 
-## Processing  
+### Processing  
 
 To make the dataset usable, I wrote a preprocessing pipeline that:  
 
@@ -115,9 +115,9 @@ One limitation of MovieLens 100K is its sparsity with only 100k ratings across n
 
 Despite its limitations, the MovieLens 100K dataset provides a clean and reliable benchmark for testing recommender system models. It has been widely used in academic research, which allows me to compare my results with established baselines such as matrix factorization or neural collaborative filtering. More importantly, it serves as a foundation for experimenting with reinforcement learning techniques like A3C, where the challenge is to design a simulator that mimics user feedback dynamically.
 
-### Results
+# Results
 
-<h2>📊 Comparasions Warm-start Dataset MovieLens 100k</h2>
+<h4>📊 Comparasions Warm-start Dataset MovieLens 100k</h4>
 
 <table>
   <thead>
