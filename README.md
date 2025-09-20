@@ -53,6 +53,18 @@ At the beginning of this project, I assumed that finding a well-structured datas
 
 **MovieLens 100K**
 
+### 📊 Raw Data Preview (MovieLens 100K)
+
+| user_id | movie_id | rating | timestamp  |
+|-----|-----|-----|-------|
+| 1       | 50       | 5      | 881250949  |
+| 1       | 172      | 5      | 881250949  |
+| 1       | 133      | 1      | 881250949  |
+| 2       | 302      | 3      | 891717742  |
+| 2       | 377      | 4      | 891717742  |
+| 3       | 50       | 2      | 878887116  |
+
+
 Format – The dataset is organized into several files. The main file `u.data` stores user–item interactions in the form of `(user_id, movie_id, rating, timestamp)`. Additional metadata files include `u.item`, which contains movie titles and genres, and `u.user`, which stores demographic information about users such as age, gender, occupation, and zip code.
 
 **Processing**  To make the dataset usable, I wrote a preprocessing pipeline that:
