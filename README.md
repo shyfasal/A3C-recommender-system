@@ -115,4 +115,72 @@ One limitation of MovieLens 100K is its sparsity with only 100k ratings across n
 
 Despite its limitations, the MovieLens 100K dataset provides a clean and reliable benchmark for testing recommender system models. It has been widely used in academic research, which allows me to compare my results with established baselines such as matrix factorization or neural collaborative filtering. More importantly, it serves as a foundation for experimenting with reinforcement learning techniques like A3C, where the challenge is to design a simulator that mimics user feedback dynamically.
 
+### Results
+
+<h2>📊 Evaluation Results</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Metode</th>
+      <th>p = 10%<br>(Hit@10 / N@10)</th>
+      <th>p = 30%<br>(Hit@10 / N@10)</th>
+      <th>p = 50%<br>(Hit@10 / N@10)</th>
+      <th>p = 70%<br>(Hit@10 / N@10)</th>
+      <th>p = 90%<br>(Hit@10 / N@10)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">Pop-Ranking</td>
+      <td align="center">10.96% / 2.90%</td>
+      <td align="center">9.49% / 2.16%</td>
+      <td align="center">8.15% / 1.65%</td>
+      <td align="center">7.41% / 1.31%</td>
+      <td align="center">7.52% / 1.48%</td>
+    </tr>
+    <tr>
+      <td align="center">Deep Q-Network</td>
+      <td align="center">35.07% / 7.72%</td>
+      <td align="center">- / -</td>
+      <td align="center">26.59% / 5.90%</td>
+      <td align="center">- / -</td>
+      <td align="center">14.47% / 4.61%</td>
+    </tr>
+    <tr>
+      <td align="center">Session-based RNN</td>
+      <td align="center">39.06% / 8.54%</td>
+      <td align="center">36.67% / 6.92%</td>
+      <td align="center">32.93% / 5.45%</td>
+      <td align="center">27.08% / 4.05%</td>
+      <td align="center">19.11% / 3.66%</td>
+    </tr>
+    <tr>
+      <td align="center">SLRL (Warm-case)</td>
+      <td align="center">53.62% / 14.34%</td>
+      <td align="center">50.11% / 12.07%</td>
+      <td align="center">46.99% / 9.64%</td>
+      <td align="center">43.12% / 7.90%</td>
+      <td align="center">30.70% / 6.18%</td>
+    </tr>
+    <tr>
+      <td align="center">A3C 80% Train 20% Test</td>
+      <td align="center">55.18% / 14.52%</td>
+      <td align="center">53.21% / 12.92%</td>
+      <td align="center">47.74% / 10.04%</td>
+      <td align="center">43.35% / 7.99%</td>
+      <td align="center">28.80% / 5.67%</td>
+    </tr>
+    <tr>
+      <td align="center">A3C 90% Train 10% Test</td>
+      <td align="center">56.43% / 14.36%</td>
+      <td align="center">52.40% / 12.53%</td>
+      <td align="center">48.30% / 9.96%</td>
+      <td align="center">44.84% / 8.28%</td>
+      <td align="center">32.12% / 6.51%</td>
+    </tr>
+  </tbody>
+</table>
+
+
 
