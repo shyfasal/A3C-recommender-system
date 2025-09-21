@@ -209,14 +209,13 @@ Despite its limitations, the MovieLens 100K dataset provides a clean and reliabl
   - Outperforms **SLRL** by **+3–4% Hit@10**
   - Significantly better than **DQN, sRNN, and Pop-Ranking**
 
----
 
 ### Stability and Generalization
 - A3C consistently performs better across all **P values (10%–90%)**  
 - High recall at **P=10–30%**, capturing user preferences even with limited history  
 - **Overfitting observed** at **P=70–90%**, as performance drops when the model relies too much on long historical data  
 
----
+
 
 ### Performance Drop at Higher P%
 - **80/20 split**  
@@ -228,7 +227,7 @@ Despite its limitations, the MovieLens 100K dataset provides a clean and reliabl
 
 **Reason:** The MovieLens 100K dataset is dominated by **popular items**. As P increases, recommendations become biased toward general consumption patterns, reducing personalization.  
 
----
+
 
 ### Key Insights
 - **A3C outperforms** all baseline methods (Pop-Ranking, DQN, sRNN, SLRL)  
