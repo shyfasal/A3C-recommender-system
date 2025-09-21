@@ -160,8 +160,7 @@ This codebase was developed and tested with the following environment:
 
  ```bash
 conda env create --file environment.yml 
-
-
+```
 
 # Results
 
