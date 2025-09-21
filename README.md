@@ -202,7 +202,6 @@ Despite its limitations, the MovieLens 100K dataset provides a clean and reliabl
 
 ### References  
 - MovieLens dataset: [GroupLens Research](https://grouplens.org/datasets/movielens/100k/)  
-- Harper, F. M., & Konstan, J. A. (2015). *The MovieLens Datasets: History and Context*. ACM Transactions on Interactive Intelligent Systems (TIIS).  
 - Aggarwal, M., Arora, A., Sodhani, S., & Krishnamurthy, B. (2017). Improving Search through A3C Reinforcement Learning based Conversational Agent. http://arxiv.org/abs/1709.05638
 - Bras, E. H., Louw, T. M., & Bradshaw, S. M. (2024). Safe, visualizable reinforcement learning for process control with a warm-started actor network based on PI-control. Journal of Process Control, 144. https://doi.org/10.1016/j.jprocont.2024.103340
 - Brini, A., Tedeschi, G., & Tantari, D. (2023). Reinforcement learning policy recommendation for interbank network stability. Journal of Financial Stability, 67. https://doi.org/10.1016/j.jfs.2023.101139
