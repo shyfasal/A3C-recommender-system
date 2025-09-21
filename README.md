@@ -203,4 +203,15 @@ Despite its limitations, the MovieLens 100K dataset provides a clean and reliabl
 ### References  
 - MovieLens dataset: [GroupLens Research](https://grouplens.org/datasets/movielens/100k/)  
 - Harper, F. M., & Konstan, J. A. (2015). *The MovieLens Datasets: History and Context*. ACM Transactions on Interactive Intelligent Systems (TIIS).  
+- Aggarwal, M., Arora, A., Sodhani, S., & Krishnamurthy, B. (2017). Improving Search through A3C Reinforcement Learning based Conversational Agent. http://arxiv.org/abs/1709.05638
+- Bras, E. H., Louw, T. M., & Bradshaw, S. M. (2024). Safe, visualizable reinforcement learning for process control with a warm-started actor network based on PI-control. Journal of Process Control, 144. https://doi.org/10.1016/j.jprocont.2024.103340
+- Brini, A., Tedeschi, G., & Tantari, D. (2023). Reinforcement learning policy recommendation for interbank network stability. Journal of Financial Stability, 67. https://doi.org/10.1016/j.jfs.2023.101139
+- Chen, X., Yao, L., McAuley, J., Zhou, G., & Wang, X. (2023). Deep reinforcement learning in recommender systems: A survey and new perspectives. Knowledge-Based Systems, 264. https://doi.org/10.1016/j.knosys.2023.110335
+- Del Rio, A., Jimenez, D., & Serrano, J. (2024). Comparative Analysis of A3C and PPO Algorithms in Reinforcement Learning: A Survey on General Environments. IEEE Access. https://doi.org/10.1109/ACCESS.2024.3472473
+- Deng, J., Chen, J., Wang, S., Ye, J., & Wang, Y. (2024). A novel fuzzy neural collaborative filtering for recommender systems. Expert Systems with Applications, 258. https://doi.org/10.1016/j.eswa.2024.125153
+- Gazdar, A., & Hidri, L. (2020). A new similarity measure for collaborative filtering based recommender systems ✩. 188, 105058. https://doi.org/10.1016/j.knosys
 - Huang, L., Fu, M., Li, F., Qu, H., Liu, Y., & Chen, W. (2021). A deep reinforcement learning based long-term recommender system. Knowledge-Based Systems, 213. https://doi.org/10.1016/j.knosys.2020.106706
+- Jalili, M., Ahmadian, S., Izadi, M., Moradi, P., & Salehi, M. (2018). Evaluating Collaborative Filtering Recommender Algorithms: A Survey. IEEE Access, 6, 74003–74024. https://doi.org/10.1109/ACCESS.2018.2883742
+- Marco wiering. (2019). Reinforcement Learning state of the art. Scholars Portal.
+- Mnih, V., Badia, A. P., Mirza, M., Graves, A., Lillicrap, T. P., Harley, T., Silver, D., & Kavukcuoglu, K. (2016). Asynchronous Methods for Deep Reinforcement Learning. http://arxiv.org/abs/1602.01783
+
