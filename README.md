@@ -282,6 +282,8 @@ train_test_A3C.py --file 100k --k 10 --warm_split 0.0 --folds 5
 - **A3C outperforms** all baseline methods (Pop-Ranking, DQN, sRNN, SLRL)  
 - **Strong in warm-start scenarios**: delivers relevant recommendations with sparse user history  
 - **Needs overfitting mitigation** at high P values (e.g., via **regularization, data augmentation, or diversity-aware sampling**)  
-
-### LICENSE
+---
+# LICENSE
+This project is licensed under the terms of the [MIT License](LICENSE).  
+See the LICENSE file for details.
 
