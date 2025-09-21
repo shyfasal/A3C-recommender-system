@@ -200,17 +200,37 @@ Despite its limitations, the MovieLens 100K dataset provides a clean and reliabl
 </table>
 
 
-### References  
-- MovieLens dataset: [GroupLens Research](https://grouplens.org/datasets/movielens/100k/)  
-- Aggarwal, M., Arora, A., Sodhani, S., & Krishnamurthy, B. (2017). Improving Search through A3C Reinforcement Learning based Conversational Agent. http://arxiv.org/abs/1709.05638
-- Bras, E. H., Louw, T. M., & Bradshaw, S. M. (2024). Safe, visualizable reinforcement learning for process control with a warm-started actor network based on PI-control. Journal of Process Control, 144. https://doi.org/10.1016/j.jprocont.2024.103340
-- Brini, A., Tedeschi, G., & Tantari, D. (2023). Reinforcement learning policy recommendation for interbank network stability. Journal of Financial Stability, 67. https://doi.org/10.1016/j.jfs.2023.101139
-- Chen, X., Yao, L., McAuley, J., Zhou, G., & Wang, X. (2023). Deep reinforcement learning in recommender systems: A survey and new perspectives. Knowledge-Based Systems, 264. https://doi.org/10.1016/j.knosys.2023.110335
-- Del Rio, A., Jimenez, D., & Serrano, J. (2024). Comparative Analysis of A3C and PPO Algorithms in Reinforcement Learning: A Survey on General Environments. IEEE Access. https://doi.org/10.1109/ACCESS.2024.3472473
-- Deng, J., Chen, J., Wang, S., Ye, J., & Wang, Y. (2024). A novel fuzzy neural collaborative filtering for recommender systems. Expert Systems with Applications, 258. https://doi.org/10.1016/j.eswa.2024.125153
-- Gazdar, A., & Hidri, L. (2020). A new similarity measure for collaborative filtering based recommender systems ✩. 188, 105058. https://doi.org/10.1016/j.knosys
-- Huang, L., Fu, M., Li, F., Qu, H., Liu, Y., & Chen, W. (2021). A deep reinforcement learning based long-term recommender system. Knowledge-Based Systems, 213. https://doi.org/10.1016/j.knosys.2020.106706
-- Jalili, M., Ahmadian, S., Izadi, M., Moradi, P., & Salehi, M. (2018). Evaluating Collaborative Filtering Recommender Algorithms: A Survey. IEEE Access, 6, 74003–74024. https://doi.org/10.1109/ACCESS.2018.2883742
-- Marco wiering. (2019). Reinforcement Learning state of the art. Scholars Portal.
-- Mnih, V., Badia, A. P., Mirza, M., Graves, A., Lillicrap, T. P., Harley, T., Silver, D., & Kavukcuoglu, K. (2016). Asynchronous Methods for Deep Reinforcement Learning. http://arxiv.org/abs/1602.01783
 
+### Performance Results
+- **Hit@10 (P=10%)**
+  - A3C (80/20 split): **55.18%** | NDCG@10: **14.52%**
+  - A3C (90/10 split): **56.43%** | NDCG@10: **14.36%**
+- **Compared to baselines**
+  - Outperforms **SLRL** by **+3–4% Hit@10**
+  - Significantly better than **DQN, sRNN, and Pop-Ranking**
+
+---
+
+### Stability and Generalization
+- A3C consistently performs better across all **P values (10%–90%)**  
+- High recall at **P=10–30%**, capturing user preferences even with limited history  
+- **Overfitting observed** at **P=70–90%**, as performance drops when the model relies too much on long historical data  
+
+---
+
+### Performance Drop at Higher P%
+- **80/20 split**  
+  - Hit@10: **43.35% → 28.80%** (↓ 14.55%)  
+  - NDCG@10: **7.99% → 5.67%** (↓ 2.32%)  
+- **90/10 split**  
+  - Hit@10: **44.84% → 32.12%** (↓ 12.72%)  
+  - NDCG@10: **8.28% → 6.51%** (↓ 1.77%)  
+
+**Reason:** The MovieLens 100K dataset is dominated by **popular items**. As P increases, recommendations become biased toward general consumption patterns, reducing personalization.  
+
+---
+
+### Key Insights
+- **A3C outperforms** all baseline methods (Pop-Ranking, DQN, sRNN, SLRL)  
+- **Strong in warm-start scenarios**: delivers relevant recommendations with sparse user history  
+- **Needs overfitting mitigation** at high P values (e.g., via **regularization, data augmentation, or diversity-aware sampling**)  
