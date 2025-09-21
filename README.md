@@ -68,6 +68,11 @@ At the beginning of this project, I assumed that finding a well-structured datas
 
 Format  The dataset is organized into several files. The main file `u.data` stores user–item interactions in the form of `(user_id, movie_id, rating, timestamp)`. Additional metadata files include `u.item`, which contains movie titles and genres, and `u.user`, which stores demographic information about users such as age, gender, occupation, and zip code.
 
+Dataset files:  
+- **u.data** → user–item interactions (user_id, movie_id, rating, timestamp)  
+- **u.item** → movie titles and genres  
+- **u.user** → user demographics (age, gender, occupation, zip code)  
+
 
 ### Processing  
 
@@ -193,3 +198,9 @@ Despite its limitations, the MovieLens 100K dataset provides a clean and reliabl
     </tr>
   </tbody>
 </table>
+
+
+### References  
+- MovieLens dataset: [GroupLens Research](https://grouplens.org/datasets/movielens/100k/)  
+- Harper, F. M., & Konstan, J. A. (2015). *The MovieLens Datasets: History and Context*. ACM Transactions on Interactive Intelligent Systems (TIIS).  
+- Huang, L., Fu, M., Li, F., Qu, H., Liu, Y., & Chen, W. (2021). A deep reinforcement learning based long-term recommender system. Knowledge-Based Systems, 213. https://doi.org/10.1016/j.knosys.2020.106706
