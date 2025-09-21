@@ -162,8 +162,11 @@ This codebase was developed and tested with the following environment:
 conda env create --file environment.yml 
 ```
 # Train
+This repository provides examples for training and evaluation.
+
+You can train the recommender system with A3C on the MovieLens dataset by running:
 ```bash
-train_test_A3C.py
+train_test_A3C.py --file 100k --k 10 --warm_split 0.0 --folds 5
 ```
 
 # Results
