@@ -44,7 +44,6 @@ To address these challenges, this research proposes the use of the A3C algorithm
 ---
 # How Recommender A3C works
 <img src="Images/A3C CELL.png" alt="My Diagram" width="500"/>
-## How Recommender A3C Works  
 
 This project applies **A3C (Asynchronous Advantage Actor-Critic)** to build an adaptive recommender system. The workflow can be summarized as follows:  
 
