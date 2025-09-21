@@ -44,6 +44,37 @@ To address these challenges, this research proposes the use of the A3C algorithm
 ---
 # How Recommender A3C works
 <img src="Images/A3C CELL.png" alt="My Diagram" width="500"/>
+## How Recommender A3C Works  
+
+This project applies **A3C (Asynchronous Advantage Actor-Critic)** to build an adaptive recommender system. The workflow can be summarized as follows:  
+
+1. **Environment → State**  
+   - User interaction history is modeled as the environment.  
+   - The state vector represents the current user context.  
+
+2. **Embedding Layer**  
+   - Maps item IDs into a dense representation space.  
+   - Captures semantic similarity between items.  
+
+3. **EMGRU (Enhanced Memory GRU)**  
+   - Maintains sequential memory of user interactions.  
+   - Learns evolving preferences over time.  
+
+4. **Asynchronous Workers**  
+   - Multiple agents interact with the environment in parallel.  
+   - Each worker updates the global model asynchronously for faster and more stable learning.  
+
+5. **Actor–Critic Networks**  
+   - **Policy Network (Actor):** outputs action probabilities (which item to recommend).  
+   - **Value Network (Critic):** evaluates the quality of state–action pairs.  
+   - **Advantage Function:** stabilizes training by reducing gradient variance.  
+
+6. **Reward and Update**  
+   - The system receives rewards based on user feedback (positive or negative).  
+   - Actor and Critic are updated to improve future recommendations.  
+
+7. **Output Recommendation**  
+   - Produces recommendations that balance short-term relevance with long-term engagement.  
 
 
 ---
