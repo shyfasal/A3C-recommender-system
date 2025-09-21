@@ -161,6 +161,10 @@ This codebase was developed and tested with the following environment:
  ```bash
 conda env create --file environment.yml 
 ```
+# Train
+```bash
+Train_test_A3C.py
+```
 
 # Results
 
