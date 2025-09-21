@@ -152,6 +152,17 @@ Despite its limitations, the MovieLens 100K dataset provides a clean and reliabl
 
 # Prerequisite
 
+This codebase was developed and tested with the following environment: 
+
+- Python 3.7.12  
+- PyTorch 1.12.1    
+- TensorFlow 2.11.0  
+
+ ```bash
+conda env create --file environment.yml 
+
+
+
 # Results
 
 <h4>📊 Comparasions Warm-start Dataset MovieLens 100k</h4>
