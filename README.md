@@ -163,7 +163,7 @@ conda env create --file environment.yml
 ```
 # Train
 ```bash
-Train_test_A3C.py
+train_test_A3C.py
 ```
 
 # Results
