@@ -150,6 +150,8 @@ One limitation of MovieLens 100K is its sparsity with only 100k ratings across n
 
 Despite its limitations, the MovieLens 100K dataset provides a clean and reliable benchmark for testing recommender system models. It has been widely used in academic research, which allows me to compare my results with established baselines such as matrix factorization or neural collaborative filtering. More importantly, it serves as a foundation for experimenting with reinforcement learning techniques like A3C, where the challenge is to design a simulator that mimics user feedback dynamically.
 
+# Prerequisite
+
 # Results
 
 <h4>📊 Comparasions Warm-start Dataset MovieLens 100k</h4>
@@ -263,3 +265,4 @@ Despite its limitations, the MovieLens 100K dataset provides a clean and reliabl
 - **A3C outperforms** all baseline methods (Pop-Ranking, DQN, sRNN, SLRL)  
 - **Strong in warm-start scenarios**: delivers relevant recommendations with sparse user history  
 - **Needs overfitting mitigation** at high P values (e.g., via **regularization, data augmentation, or diversity-aware sampling**)  
+
