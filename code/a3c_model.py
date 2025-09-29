@@ -1,3 +1,16 @@
+# ******************************************************************************
+# © 2025 Shyfa Salsabila. All rights reserved.
+#
+# Copyright © 2025 Shyfa Salsabila.
+# This software and its source code are protected by copyright law.
+#
+# Unauthorized copying, modification, distribution, or use of this software,
+# in whole or in part, without prior written permission is strictly prohibited.
+#
+# See the LICENSE file at:
+#     https://github.com/shyfasal/A3C-recommender-system/blob/main/LICENSE
+# ******************************************************************************
+
 
 import tensorflow as tf
 from tensorflow.contrib.seq2seq import *
